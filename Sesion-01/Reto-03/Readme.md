@@ -16,21 +16,6 @@
 
 Usando la base de datos `tienda`, escribe una consulta que permita obtener el top 5 de puestos por salarios.
 
-<details><summary>Solución</summary>
-<p>
-
-Para contestar a esta pregunta, basta con ordenar las calificaciones del alumno en orden descendente y limitar el número de registros a 5.
-
-   ```sql
-   SELECT *
-   FROM tienda
-   ORDER BY salario DESC
-   LIMIT 5;
-   ```
-</p>
-</details> 
-
-<br/>
 
 [`Anterior`](../Ejemplo-04/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
 
