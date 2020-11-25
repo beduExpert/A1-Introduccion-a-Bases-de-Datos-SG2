@@ -14,7 +14,7 @@
 
 ### 3. Desarrollo :rocket:
 
-Usando la tabla `cursos`, escribe consultas que permitan responder las siguientes preguntas.
+Usando la tabla `empleados`, escribe consultas que permitan responder las siguientes preguntas.
 
 - ¿Cuál es el nombre de los empleados con el puesto 4?
 - ¿Qué puestos tienen un salario mayor a $10,000?
