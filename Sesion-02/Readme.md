@@ -23,15 +23,8 @@ La *búsqueda de patrones* es una técnica que permite realizar búsquedas media
 * Las expresiones regulares  
 * El uso de la cláusula `LIKE` en __SQL__  
 
-> *Describir a profundidad la técnica de pattern matching y mencionar lenguajes de programación y otras herramientas tecnológicas que utilicen esta técnica.*
-
-> *Explicar qué son las expresiones regulares.*
-
 ##### Cláusula `LIKE`
 La cláusula `LIKE` permite usar comodines en la cláusula `WHERE` de una instrucción `SELECT` y realizar búsqueda de patrones.  
-
-
-> *Describir la sintaxis de LIKE y los comodines existentes. <S></S>e recomienda hacerlo de manera visual en el pizarrón.*
 
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)	
@@ -51,9 +44,6 @@ MIN()
 COUNT()
 ```
 
-
-> *Explicar cómo funciona una función de agrupamiento y ejemplificar, relacionarlo con el comportamiento que tienen las hojas de cálculo (Excel).*
-
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 - [**`RETO 2`**](Reto-02/Readme.md)	
 
@@ -62,18 +52,27 @@ COUNT()
 #### <ins>Agrupamientos</ins>
 <img src="imagenes/imagen3.jpg" align="right" height="150" width="250"> 
 
-La cláusula `GROUP BY` es usada dentro de la instrucción SELECT para recolectar datos a partir de varios registros y agruparlos en una o más columnas.
-
-> *Explicar el uso de agrupamientos de bases de datos, quizá mencionar alguno de sus principales usos. Nuevamente se sugiere hacer dibujos en el pizarrón para hacer más claro el resultado (antes del ejemplo).*
+La cláusula `GROUP BY` es usada dentro de la instrucción `SELECT` para recolectar datos a partir de varios registros y agruparlos en una o más columnas.
 
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 3`**](Reto-03/Readme.md)	
 
 ---
 
-### 3. Ejercicios de práctica :hammer:
+#### <ins>Subconsultas</ins>
 
-Aplica lo todo lo que aprendiste durante la sesión en estos ejercicios. 
+<img src="imagenes/imagen4.png" align="right" height="150" width="250">
+
+Una subconsulta es una consulta que se encuentra dentro de otra. Estas subconsultas pueden aparecer en las cláusulas, `WHERE`, `FROM` y en el área de campos de SELECT.  
+
+- [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
+- [**`RETO 4`**](Reto-04/Readme.md)	
+
+---
+
+### 3. Ejercicios para practicar :hammer:
+
+Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
 
 - [**`EJERCICIOS SESIÓN 2`**](Ejercicios/Readme.md)
 
