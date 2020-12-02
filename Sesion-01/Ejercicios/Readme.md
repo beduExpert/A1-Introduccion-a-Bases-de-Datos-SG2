@@ -76,6 +76,21 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 **¡¡¡MUCHA SUERTE!!!**
 
+<<<<<<< HEAD
+=======
+<details><summary>Solución</summary>
+<br/>
+
+[**Revisa el script con las soluciones**](solucion.sql)
+
+<p>
+
+</p>
+</details> 
+
+<br/>
+
+>>>>>>> d9796a466ac3b1c288db4ea18738311570807aae
 [`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)
 
 </div>

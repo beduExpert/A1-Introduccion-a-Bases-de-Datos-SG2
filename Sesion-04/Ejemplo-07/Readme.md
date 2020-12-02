@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Ejemplo 7
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 7
 
 ## Ejemplo 7: Realizando operaciones con Documentos
 
@@ -19,6 +19,7 @@ A continuación se realizaran las operaciones de agregar, modificar y eliminar u
 1. Para agregar un Documento, dar clic sobre la base de datos __MiNombre__, luego dar clic sobre la colección __users__ y entonces dar clic sobre el botón __INSERT DOCUMENT__:
 
    ![Insertando un documento](imagenes/insertando-documento.png)
+
    Esto abrirá un diálogo que nos permite agregar los campos que conformarán nuestro documento en formato JSON. Por ejemplo:
 
    ```json
@@ -63,9 +64,11 @@ A continuación se realizaran las operaciones de agregar, modificar y eliminar u
    ```
 
    ![Agregando otro documento](imagenes/adicionando-datos-2.png)
+
    Observa como en `MongoDB` cada campo puede ser un arreglo y cada elemento a su vez también puede ser un arreglo o un objeto y así indefinidamente.
 
    Luego de presionar el botón __INSERT__ modifica la barra de `FILTER` con lo siguiente para observar nuestros dos documentos agregados:
+
    ```json
    {id: {$in: ["7000", "7001"]}}
    ```
@@ -75,6 +78,7 @@ A continuación se realizaran las operaciones de agregar, modificar y eliminar u
 1. Para modificar un documento, dar clic sobre el botón __Edit Document__
 
    ![Editar un documento](imagenes/editar-documento.png)
+
    Después de dar clic en el botón __Edit Document__ el documento cambia a estado editable y se puede modificar el contenido del documento.
 
    Agregar el siguiente título de película a la lista de `pelisValoradas`:
@@ -83,7 +87,8 @@ A continuación se realizaran las operaciones de agregar, modificar y eliminar u
    ```
 
    ![Modificando documento](imagenes/modificando-documento.png)
+   
    Da clic sobre el botón __UPDATE__ para guardar los cambios.
 
 
-[`Anterior`](../Reto-03/Readme.md) | [`Siguiente`](../Ejercicios/Readme.md)      
+[`Anterior`](../Reto-03/Readme.md) | [`Siguiente`](../Proyecto/Readme.md)      

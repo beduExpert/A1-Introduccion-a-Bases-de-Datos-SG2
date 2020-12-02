@@ -19,6 +19,42 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 - ¿Qué artículos incluyen la palabra `Pasta` en su nombre?
 - ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
 - ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
+<<<<<<< HEAD
+=======
+
+<details><summary>Solución</summary>
+<p>
+
+- ¿Qué artículos incluyen la palabra `Pasta` en su nombre?
+
+   ```sql
+   SELECT *
+   FROM articulo
+   WHERE nombre LIKE '%PASTA%';
+   ```
+   ![imagen](imagenes/s2wr11.png)
+
+- ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
+
+   ```sql
+   SELECT *
+   FROM articulo
+   WHERE nombre LIKE '%Cannelloni%';
+   ```
+   ![imagen](imagenes/s2wr12.png)
+   
+- ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
+
+   ```sql
+   SELECT *
+   FROM articulo
+   WHERE nombre LIKE '% - %';
+   ```
+   ![imagen](imagenes/s2wr13.png) 
+
+</p>
+</details>
+>>>>>>> d9796a466ac3b1c288db4ea18738311570807aae
 
 <br/>
 

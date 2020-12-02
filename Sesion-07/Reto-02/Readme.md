@@ -1,34 +1,75 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Reto 2
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 2`
+	
+## Reto 2: Asociación de colecciones
 
-## Reto 2: Importando datos a una tabla en formato CSV
+<div style="text-align: justify;">
 
-### 1. Objetivos :dart:
-- Aplicar el procedimiento para importación de datos a una tabla
-- Validar la correcta importación de los datos
+### 1. Objetivos :dart: 
+
+- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
 
 ### 2. Requisitos :clipboard:
-- Servidor __MySQL__ instalado en tu equipo
+
+1. MongoDB Compass instalado.
 
 ### 3. Desarrollo :rocket:
 
----
+Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
 
-<img src="../imagenes/tabla.gif" align="right" height="170" width="200"> 
+**NO CIERES ESTE *PIPELINE* PUES LO USAREMOS MÁS ADELANTE**
 
-:warning: <ins>**IMPORTANTE**</ins>
+<details><summary>Solución</summary>
+<p>
+	
+Primero, obtenemos la relación con `$lookup`.	
 
-_En este reto debes trabajar con la instancia de __MySQL__ que instalaste y configuraste en el *Prework* de la sesión_.
+```json
+{
+  from: 'users',
+  localField: 'name',
+  foreignField: 'name',
+  as: 'usuario'
+}
+```
 
-_NO REALICES LOS EJEMPLOS NI RETOS EN EL SERVIDOR DE BEDU._ :pray: 
+![imagen](imagenes/s6r21.png)
 
-_Si no sigues esta indicación... ¡Hay Tabla!_ :eyes:
+Posteriormente, obtenemos el objeto del arreglo, su campo `password` y finalmente proyectamos los datos necesarios.
 
----
+- `$addFields`
 
-1. Usando como base el archivo `movies.dat`, limpiarlo e importar los datos en la tabla `movies` creada en el Reto 1.
+```json
+{
+  usuario_objeto: {$arrayElemAt: ["$usuario", 0]}
+}
+```
 
-1. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.
+- `$addFields`
+
+```json
+{
+  usuario_password: "$usuario_objeto.password"
+}
+```
+
+- `$project`
+
+```json
+{
+  _id:0,
+  name:1,
+  email:1,
+  usuario_password:1
+}
+```
+
+![imagen](imagenes/s6r22.png)
+
+</p>
+</details> 
 
 <br/>
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#configuración-de-mongodb-en-la-nube)
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#generación-de-vistas)   
+
+</div>

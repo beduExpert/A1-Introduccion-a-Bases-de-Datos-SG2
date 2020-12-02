@@ -23,6 +23,11 @@ Para relacionar tablas se incluyen los *joins* que son operadores entre tablas, 
 1. `LEFT OUTER JOIN`
 1. `RIGHT OUTER JOIN`
 
+<<<<<<< HEAD
+=======
+> *Explicar el concepto de join y las diferencias entre cada una de sus variantes. Se sugiere <ins>ampliamente</ins> el uso del pizarrón para ejemplificar los resultados después de aplicar estas operaciones.*
+
+>>>>>>> d9796a466ac3b1c288db4ea18738311570807aae
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)	
 
@@ -39,6 +44,11 @@ Para crear una vista se usa:
 
 Las vistas no requieren de almacenamiento adicional y pueden consultar usando la cláusula `SELECT`.
 
+<<<<<<< HEAD
+=======
+> *Explicar el concepto de vista y sus principales ventajas.*
+
+>>>>>>> d9796a466ac3b1c288db4ea18738311570807aae
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 - [**`RETO 2`**](Reto-02/Readme.md)	
 
