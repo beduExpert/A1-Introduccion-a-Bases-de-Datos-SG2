@@ -26,8 +26,6 @@ Para crear bases de datos (esquemas), se usa el comando:
 CREATE DATABASE <nombre>;
 ```
 
-> *Explicar la diferencia entre servidor de base de datos y base de datos (esquema), así como ejemplos de creación de bases de datos.*
-
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 
 ---
@@ -45,8 +43,6 @@ Para crear una tabla se usa el comando (en su forma simple):
    );
 ```
 
-> *Mostrar ejemplos de creación de tablas con llaves y los distintos tipos de datos de __MySQL__.*
-
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)
 
@@ -57,8 +53,6 @@ Para crear una tabla se usa el comando (en su forma simple):
 Para cargar datos en una tabla o base de datos completa es usar que se deban utilizar archivos como lo son *CSV* o *JSON*. *CSV* es uno de los más utilizados y admitidos por __MySQL Workbench__.
 
 Un archivo *CSV* se conforma de un encabezado que indica el nombre de las columnas separado por comas y cada uno de los registros, separando el valor para cada campo por comas. 
-
-> *Mostrar algún archivo CSV y explicar cada una de sus partes.*
 
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 2`**](Reto-02/Readme.md)
@@ -75,8 +69,6 @@ Para facilitar la creación de servidores de bases de datos (llamados *clusters*
 
 Esta plataforma, llamada __Atlas__ permite crear un *cluster* de forma gratuita por lo que lo usaremos para ejemplificar este proceso. Puedes utilizarlo también para tu proyecto.
 
-> *Explicar el concepto de base de datos en la nube y su principal diferencia con una base de datos local. Mostrar similudes con el servicio AWS de Amazon.*
-
 - [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
 
 ---
@@ -88,8 +80,6 @@ Una vez configurado el *cluster* a partir de __MongoDB Atlas__, podemos conectar
 Lo único que solicita __MongoDB Compass__, a través de una interfaz gráfica, es el nombre de la base de datos.
 
 Por cierto, __MongoDB Compass__ no es el único cliente de __MongoDB__, también existen otras herramientas como __Robo 3T__ o el *shell* de __MongoDB__.
-
-> *Mostrar la pantalla de creación de bases de datos de Compass*.
 
 - [**`EJEMPLO 5`**](Ejemplo-05/Readme.md)
 
