@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 1`
 	
 ## Reto 1: Expresiones regulares
 
@@ -20,46 +20,6 @@ Usando la base de datos `sample_airbnblistingsAndReviews`, realiza los siguiente
 - Propiedades que admitan mascotas.
 - Propiedades que no permitan fumadores.
 - Propiedades que no permitan fiestas ni fumadores.
-
-<details><summary>Solución</summary>
-<p>
-
-- Propiedades que no permitan fiestas.
-
-   ```json
-   {house_rules: /No Parties/i}
-   ```
-   
-   ![imagen](imagenes/s5e11.png)
-
-- Propiedades que admitan mascotas.
-
-   ```json
-   {house_rules: /Pets Allowed/i}
-   ```
-   
-   ![imagen](imagenes/s5e12.png)
-   
-- Propiedades que no permitan fumadores.
-
-   ```json
-   {house_rules: /No Smoking/i}	
-   ```
-   ![imagen](imagenes/s5e13.png) 
-   
-- Propiedades que no permitan fiestas ni fumadores.
-
-   ```json
-   {house_rules: /No Smoking|No Parties/i}
-   ```
-   
-   ![imagen](imagenes/s5e14.png)
-
-
-</p>
-</details>
-
-<br/>
 
 [`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#notación-punto-y-arreglos)
 
